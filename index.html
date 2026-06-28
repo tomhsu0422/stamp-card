@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>蕙萍與宇杰的可愛集點卡</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <section class="hero">
+      <div class="badge">同步版</div>
+      <h1>可愛集點卡</h1>
+      <p>點空格蓋章，點已蓋章取消；每 10 個章自動換下一張卡。</p>
+      <div id="status" class="status">連線中…</div>
+    </section>
+
+    <section class="cards" id="cards"></section>
+
+    <section class="totals">
+      <div><span>蕙萍目前</span><strong id="huipingTotal">0</strong><span>個章</span></div>
+      <div><span>宇杰目前</span><strong id="yujieTotal">0</strong><span>個章</span></div>
+    </section>
+
+    <section class="actions">
+      <button id="undoBtn" class="soft">↩️ 復原上一動</button>
+      <button id="resetBtn" class="danger">🧹 全部清空</button>
+    </section>
+
+    <section class="historyBox">
+      <h2>最近紀錄</h2>
+      <div id="history" class="history"></div>
+    </section>
+  </main>
+
+  <div id="toast" class="toast"></div>
+  <script src="app.js"></script>
+</body>
+</html>
